@@ -1,5 +1,5 @@
 # CoderOfTheBot
-Бот для помощи кодерам андроид читов с открытым кодом<!-- описание репозитория -->
+Бот для помощи кодерам андроид читов с открытым кодом на базе проекта DjimboBox <!-- описание репозитория -->
 <!--Блок информации о репозитории в бейджах-->
 ![Static Badge](https://img.shields.io/badge/tw1xteam-CoderOfTheBot-Oxygen)
 ![GitHub top language](https://img.shields.io/github/languages/top/tw1xteam/coderOfTheBot)
