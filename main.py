@@ -31,7 +31,7 @@ async def main():
 
         bot_logger.warning("BOT WAS STARTED")
         print(colorama.Fore.LIGHTYELLOW_EX + f"~~~~~ Bot was started - @{(await bot.get_me()).username} ~~~~~")
-        print(colorama.Fore.LIGHTBLUE_EX + "~~~~~ TG developer - @djimbox ~~~~~")
+        print(colorama.Fore.LIGHTBLUE_EX + "~~~~~ TG developer - @gde_tw1ks ~~~~~")
         print(colorama.Fore.RESET)
 
         if len(get_admins()) == 0: print("***** ENTER ADMIN ID IN settings.ini *****")
