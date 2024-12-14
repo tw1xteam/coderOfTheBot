@@ -14,9 +14,8 @@ async def main_start(message: Message, bot: Bot, state: FSM, arSession: ARS):
     await state.clear()
 
     await message.answer(
-        ded("""
-            🔸 Бот готов к использованию.
-            🔸 Если не появились вспомогательные кнопки
-            🔸 Введите /start
-        """)
+        "CoderOfTheBot — это бот, предназначенный для помощи "
+        "разработчикам читов в популярных играх, таких как Standoff 2, "
+        "Black Russia, Oxide Survival, BLOCK POST MOBILE, BLOCK POST"
+        "(PC) и других."
     )
