@@ -18,6 +18,5 @@ async def main_start(message: Message, bot: Bot, state: FSM, arSession: ARS):
             🔸 Бот готов к использованию.
             🔸 Если не появились вспомогательные кнопки
             🔸 Введите /start
-        """),
-        reply_markup=menu_frep(message.from_user.id),
+        """)
     )
