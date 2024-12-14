@@ -5,6 +5,8 @@ import sys
 
 import colorama
 from aiogram import Dispatcher, Bot
+from aiogram.client.default import DefaultBotProperties
+from aiogram.enums import ParseMode
 
 from bot.data.config import get_admins, BOT_TOKEN, BOT_SCHEDULER
 from bot.routers import register_all_routers
@@ -19,7 +21,7 @@ async def main():
     BOT_SCHEDULER.start()  # Запуск Шедулера
     dp = Dispatcher()  # Образ Диспетчера
     arSession = AsyncRequestSession()  # Пул асинхронной сессии запросов
-    bot = Bot(token=BOT_TOKEN, parse_mode="HTML")  # Образ Бота
+    bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))  # Образ Бота
 
     register_all_routers(dp)  # Регистрация всех роутеров
 
