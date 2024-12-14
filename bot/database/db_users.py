@@ -15,7 +15,6 @@ class UserModel(BaseModel):
     user_login: str
     user_name: str
     user_balance: float
-    user_refill: float
     user_give: float
     user_unix: int
 
@@ -32,7 +31,6 @@ class Userx:
             user_name: str,
     ):
         user_balance = 0
-        user_refill = 0
         user_give = 0
         user_unix = get_unix()
 
@@ -46,7 +44,6 @@ class Userx:
                         user_login,
                         user_name,
                         user_balance,
-                        user_refill,
                         user_give,
                         user_unix
                     ) VALUES (?, ?, ?, ?, ?, ?, ?)
@@ -56,7 +53,6 @@ class Userx:
                     user_login,
                     user_name,
                     user_balance,
-                    user_refill,
                     user_give,
                     user_unix,
                 ],
