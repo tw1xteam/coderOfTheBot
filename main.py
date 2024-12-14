@@ -9,6 +9,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
 from bot.data.config import get_admins, BOT_TOKEN, BOT_SCHEDULER
+from bot.database.db_helper import create_dbx
 from bot.middlewares import register_all_middlwares
 from bot.routers import register_all_routers
 from bot.services.api_session import AsyncRequestSession
@@ -50,6 +51,8 @@ async def main():
 
 
 if __name__ == "__main__":
+    create_dbx()
+
     try:
         asyncio.run(main())
     except (KeyboardInterrupt, SystemExit):
