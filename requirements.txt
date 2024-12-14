@@ -1,2 +1,6 @@
 APScheduler~=3.11.0
 aiogram==3.15.0
+colorlog~=6.9.0
+pytz~=2024.2
+aiohttp~=3.10.11
+colorama~=0.4.6
