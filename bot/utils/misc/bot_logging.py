@@ -12,7 +12,7 @@ log_formatter_console = colorlog.ColoredFormatter(
     datefmt="%d-%m-%Y %H:%M:%S",
 )
 
-# Логгирование в файл tgbot/data/logs.log
+# Логгирование в файл bot/data/logs.log
 file_handler = bot_logger.FileHandler(PATH_LOGS, "w", "utf-8")
 file_handler.setFormatter(log_formatter_file)
 file_handler.setLevel(bot_logger.INFO)

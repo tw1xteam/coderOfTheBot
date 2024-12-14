@@ -13,8 +13,8 @@ BOT_SCHEDULER = AsyncIOScheduler(timezone=BOT_TIMEZONE)  # Образ шедул
 BOT_VERSION = 4.0  # Версия бота
 
 # Пути к файлам
-PATH_DATABASE = "tgbot/data/database.db"  # Путь к БД
-PATH_LOGS = "tgbot/data/logs.log"  # Путь к Логам
+PATH_DATABASE = "bot/data/database.db"  # Путь к БД
+PATH_LOGS = "bot/data/logs.log"  # Путь к Логам
 
 
 # Получение администраторов бота
