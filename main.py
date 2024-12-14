@@ -9,6 +9,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
 from bot.data.config import get_admins, BOT_TOKEN, BOT_SCHEDULER
+from bot.middlewares import register_all_middlwares
 from bot.routers import register_all_routers
 from bot.services.api_session import AsyncRequestSession
 from bot.utils.misc.bot_logging import bot_logger
@@ -24,6 +25,7 @@ async def main():
     bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))  # Образ Бота
 
     register_all_routers(dp)  # Регистрация всех роутеров
+    register_all_middlwares(dp) # Регистрация всех мидлваров
 
     try:
 
