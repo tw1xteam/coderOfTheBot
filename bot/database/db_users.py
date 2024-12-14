@@ -46,7 +46,7 @@ class Userx:
                         user_balance,
                         user_give,
                         user_unix
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?)
+                    ) VALUES (?, ?, ?, ?, ?, ?)
                 """),
                 [
                     user_id,
